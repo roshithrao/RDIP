@@ -8,7 +8,7 @@
 <body>
 	<h1 style="text-decoration: underline;color: red"> REGISTRATION FORM </h1>
 	<h2> All Fields Are Mandatory </h2>
-	<form> 
+	<form action = "thankyou.html" method="get" target="_blank"> 
 		<label for="fname">FIRST NAME</label>
 		<input id = "fname" type="text" name="student name" placeholder="ENTER FIRST NAME" pattern="[A-Z]+" title="Enter only capital letters" required><br>
          <label for="mname">MIDDLE NAME</label>
@@ -19,14 +19,15 @@
 		<input id = "mnumber" type="text" name="student name" placeholder="ENTER MOBLIE NUMBER" pattern="[0-9]{10}" title="Enter 10 digit mobile number" required><br>
 		<h2>Choice of your course : </h2>
 		<label for="ccourse">Bachelors</label>
-		<input id = "ccourse" type="radio" name="course" value="Bachelors"> 
+		<input id = "ccourse" type="radio" name="course" value="Bachelors" required title:"please select any one of these options"> 
 		<label for="dcourse">Masters</label>
-		<input id = "dcourse" type="radio" name="course" value="Masters"> 
+		<input id = "dcourse" type="radio" name="course" value="Masters" required title="please select any
+		one of these options"> 
 		<br>
 		<h2>Why do you want choose this course : </h2>
 		<textarea name ="preference" rows ="9" cols="80"></textarea><br>
-		<h2>Select your field of intrests[select any 3]:</h2>
-		<input type="checkbox" name="intrest1" value ="Computers">Computers
+		<h2>Select your field of intrests[select atleast 3]:</h2>
+		<input type="checkbox" name="intrest1" value ="Computers" >Computers
 		<input type="checkbox" name="intrest2" value ="Electronics">Electronics
 		<input type="checkbox" name="intrest3" value ="Mechanical">Mechanical
 		<input type="checkbox" name="intrest4" value ="Electrical">Electrical
