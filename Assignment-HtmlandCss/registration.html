@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="utf-8">
+      <meta name ="viewport" content="width=device-width;initial-scale=1.0">
+      <title>Registration Page</title>
+      <style>
+         .rdip 
+         {
+         text-align: right;
+         margin:40px;
+         padding-top: 5px;
+         }
+         .rdip a:link
+         {
+         color:blue;
+         }
+         .rdip a:visited
+         {
+         color:gold;
+         }
+         .rdip a:hover
+         {
+         color:lawngreen;
+         }
+         .rdip a:hover
+         {
+         color:purple;
+         }
+         .mainlogo
+         {
+         position: fixed;
+         top: 0;
+         left: 0;
+         padding-top: 10px;
+         }
+         ul {
+         margin-top: 20px;
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color:black;
+         }
+         li {
+         float: left;
+         }
+         li a {
+         display: inline-block;
+         color: white;
+         text-align: center;
+         padding: 15px 16px;
+         text-decoration: none;
+         }
+         a:link
+         {
+         color: blue;
+         }
+         a:visited
+         {
+         color:white;
+         }
+         a:hover
+         {
+         color : orangered;
+         }    
+         a:active
+         {
+         color:black;
+         }    
+         input
+         {
+         margin-left: 50px;
+         }
+         #uemail
+         {
+         margin-right:60px;
+         padding-right: 10px;
+         padding-left: 10px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="rdip">
+         <a href="https://serc.iiit.ac.in/rdip">
+            <h1>RDIP</h1>
+         </a>
+      </div>
+      <div class = "mainlogo"><a href="https://www.iiit.ac.in/"><img src ="https://ltrc.iiit.ac.in/iasnlp2014/iiit-hyderabad-logo.jpg" alt="iiit-logo" width = "250" height="160"></a></div>
+      <br>
+      <br>
+      <ul>
+         <li><a href="homepage.html">Home</a></li>
+         <li><a href="registration.html">Registration Form</a></li>
+      </ul>
+      <br>
+      <br>
+      <br>
+      <form action="details.html" target="_blank" method="get">
+         <label for="fname">First name:</label>
+         <input type="text" id="fname" name="fname"><br><br>
+         <label for="uemail">E-mail:</label>
+         <input type="email" id="uemail" name="email"><br><br>
+         <label for="mnumber">Phone No:</label>
+         <input id = "mnumber" type="text" name="student name" pattern="[0-9]{10}" title="Enter 10 digit mobile number" required><br><br>
+         Select Gender:<label for="mgender"></label>
+         <input id = "mgender" type="radio" name="gender" value="Male" title="please select any one of these " required>Male 
+         <label for="fgender"></label>
+         <input id = "fgender" type="radio" name="gender" value="Female"  title="please select any one of these " required>Female
+         <label for="ogender"></label>
+         <input id = "ogender" type="radio" name="gender" value="Other"  title="please select any one of these " required>Other <br><br>
+         Reason for RDIP :
+         <input type="checkbox" name="intrest1" value ="Computers" >HTML
+         <input type="checkbox" name="intrest2" value ="Electronics">CSS
+         <input type="checkbox" name="intrest3" value ="Mechanical">JavaScript <br><br>
+         <label for="coll">College:</label>
+         <input type="text" id="coll" name="college"><br><br>
+         <br>
+         <br>
+         <br>
+         <input type="checkbox" name="declaration" value = "" required>I here by declare above details give by me are true
+         <br>
+         <input type="submit" value="Submit" style = "text-align: center;color: white ;background-color: gray">
+         <input type="reset" value="Reset" style = "text-align: center;color: white ;background-color: gray">
+      </form>
+   </body>
+</html>
