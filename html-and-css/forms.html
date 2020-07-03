@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
-	<meta name ="viewport" content="width=device-width;initial-scale=1.0">
+	<meta name ="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Form</title>
 	<style>
 		body
@@ -80,7 +80,7 @@
       </ul>
 	<h1> REGISTRATION FORM </h1>
 	<h2> All Fields Are Mandatory </h2>
-	<form action = "thankyou.html" method="get" target="_blank"> 
+	<form action = "thankyou.html" name="myform" method="get" target="_blank" onsubmit="return val()"> 
 		<label for="fname">FIRST NAME</label>
 		<input id = "fname" type="text" name="student name" placeholder="ENTER FIRST NAME" pattern="[A-Z]+" title="Enter only capital letters" required><br>
          <label for="mname">MIDDLE NAME</label>
@@ -97,23 +97,51 @@
 		<br>
 		<h2>Why do you want choose this course : </h2>
 		<textarea name ="preference" rows ="9" cols="80"></textarea><br>
-		<h2>Select your field of intrests[select atleast 3]:</h2>
-		<input type="checkbox" name="intrest1" value ="Computers" >Computers
-		<input type="checkbox" name="intrest2" value ="Electronics">Electronics
-		<input type="checkbox" name="intrest3" value ="Mechanical">Mechanical
-		<input type="checkbox" name="intrest4" value ="Electrical">Electrical
-		<input type="checkbox" name="intrest5" value ="Civil">Civil
-		<input type="checkbox" name="intrest6" value ="Biotechnology">Biotechnology
-		<input type="checkbox" name="intrest7" value ="Chemical">Chemical
-		<input type="checkbox" name="intrest8" value ="Environment">Environment
-		<input type="checkbox" name="intrests9" value ="Robotics">Robotics
-		<input type="checkbox" name="intrests10" value ="Arificial Intelligence">Arificial Intelligence 
+		<h2>Select your field of intrests[select atleast 1]:</h2>
+		<input  type="checkbox" id=intrest" name="myintrest1" value ="Computers" >Computers
+		<input  type="checkbox" id="intrest" name="myintrest2" value ="Electronics" >Electronics
+		<input  type="checkbox" id="intrest" name = "myintrest3" value ="Mechanical" >Mechanical
+		<input  type="checkbox" id="intrest"  name = "myintrest4"value ="Electrical" >Electrical
+		<input  type="checkbox" id="intrest"  name = "myintrest5" value ="Civil" >Civil
+		<input  type="checkbox" id="intrest"  name = "myintrest6" value ="Biotechnology">Biotechnology
+		<input  type="checkbox" id="intrest"  name = "myintrest7" value ="Chemical">Chemical
+		<input  type="checkbox" id="intrest"  name = "myintrest8" value ="Environment">Environment
+		<input  type="checkbox" id="intrest"  name = "myintrest9" value ="Robotics">Robotics
+		<input  type="checkbox" id="intrest"  name = "myintrest0" value ="Arificial Intelligence">Arificial Intelligence 
 		<br> 
 		<br>
-         <input type="submit" id = "sub" value="Register" style = "text-align: center;color: white ;background-color: black">
+         <input type="submit" id = "sub" value="Register" style = "text-align: center;color: white ;background-color: black" >
 	</form>
 
+    <script>
+          
+     function val()
+     {
+           var a = 0;
+            var bc = document.myform.intrest;
+            for(var i=0;i<bc.length;i++)
+            {
+                if(bc[i].checked == true)
+                {   
+                    a= a+1;
+                   
+                
+                }
+            }
+            if(a==0)
+            {
+                alert("please select atleast one intrest");
+                return false;
 
+            }
+          return true; 
+
+     }
+             
+          
+
+
+    </script> 
 
 
 </body>
