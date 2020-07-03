@@ -123,7 +123,7 @@
    <br>
   <h1>MY DETAILS</h1>
 	<div id="details">
-    <p>
+    <p id = "namej">
       <b>Name : K. ROSHITH RAO</b>
     </p>
     <p>
@@ -136,7 +136,7 @@
   </div>
    <img src="https://i.postimg.cc/DwxTZwHJ/roshith-rao.jpg" alt="my image" style = "margin: auto;border:1px solid black;padding: 10px;margin-left:50px">
 	
-  <table>
+  <table id="mytable">
          <caption>
          	<p style="text-decoration:underline;"><b>Marks Obtained In My Previous Semester[3-2]</b></p>
          </caption>
@@ -201,8 +201,41 @@
                    <td style="text-align: right;">A</td>
                   <td style="text-align: right;">3</td>
             </tr>
+            <tr>
+              <td colspan="2" style="text-align: center;"><b>Average</b></td>
+              <td colspan="2" id="value" style="text-align: center;"></td>
+            </tr>
               
          
    </table>
+
+   <a href="understandingjs.html" style="background-color: black;"> my understanding of js </a>
+   <script>
+       var firstvar =10;
+     var secondvar =12;
+     console.log(firstvar+secondvar); //operation on first and second variables
+     var arr = [1,2,3,4,5]
+     var str = String(arr[3]);
+     console.log(typeof str); //converting array[3] into string
+     //average function
+     function average(){
+     var avg = (89+99+89+79+69+59+59+69+79)/5;
+    document.getElementById("value").innerHTML = avg; //printing average in table
+    }
+    average();
+    var pattern = /[A-Za-z]/i;
+   var e =pattern.test(document.getElementById("namej"));//checking if the name contains only alpabets
+   console.log(e);
+   console.log(Math.pow(8,2));
+   console.log(Math.sqrt(64));
+   console.log(Math.abs(-5.6));
+   var f = console.log(Math.random());
+   console.log(Math.ceil(4.12));
+   console.log(Math.floor(4.12));
+   console.log(Math.sin((0*Math.PI)/180));
+   console.log(Math.cos((45*Math.PI)/180));
+
+   </script>
+
    </body>
 </html>
