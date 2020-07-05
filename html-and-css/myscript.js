@@ -12,7 +12,7 @@ var txt1 = " I am HTML, I AM HYPERTEXT-MARKUP LANGUAGE," +
 var d = new Date();
 console.log(d);
 
-var num = 0;
+var num = 99;
 switch(true)
 {
   //case values within a range 
@@ -56,11 +56,7 @@ try {
                console.log(" ")
           }
 
-  function setNewImage()
-{
-   document.getElementById("img1").src = "https://i.postimg.cc/MHwCrJmK/myimage.png";
 
-}
 function setOldImage()
 {
   document.getElementById("img1").src = "https://i.postimg.cc/MHwCrJmK/myimage.png";
@@ -76,3 +72,8 @@ for (i = 2; i <= 10; i++) {
       console.log(fib[i]);
  }
 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").toggle();
+  });
+});
