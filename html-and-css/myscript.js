@@ -71,9 +71,36 @@ for (i = 2; i <= 10; i++) {
      fib[i] = fib[i - 2] + fib[i - 1];
       console.log(fib[i]);
  }
-
 $(document).ready(function(){
   $("button").click(function(){
     $("p").toggle();
   });
 });
+//toggle function
+$(document).ready(function(){
+  $("div").dblclick(function(){
+    $( this ).toggleClass("divsec2");
+  });
+});
+
+function fadeToggle(div_id, button) {
+
+    if (button.value == 'Fade Out') {
+      $('#' + div_id).fadeOut('slow');
+      button.value = 'Fade In';
+    } else {
+      $('#' + div_id).fadeIn(1000);
+      button.value = 'Fade Out';
+    }
+  }
+  
+  function fadeToToggle(div_id, button) {
+
+    if (button.value == 'FadeTo 50%') {
+      $('#' + div_id).fadeTo('slow' , 0.5);
+      button.value = 'FadeTo 100%';
+    } else {
+      $('#' + div_id).fadeTo(3000 , 1.0);
+      button.value = 'FadeTo 50%';
+    }
+  }
