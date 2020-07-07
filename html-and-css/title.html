@@ -2,10 +2,15 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8">
-	<meta name ="viewport" content="width=device-width;initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 	<title> ROSHITH RAO </title>
 	<style>
 
+    .selector-for-some-widget {
+  box-sizing: content-box;
+}
     body
     {
          background-color: lightskyblue;
@@ -55,7 +60,7 @@
         {
         	background-color: lightsteelblue;
         } 
-        h1
+        .divsec
         {
           background-color: black;
           text-align: center;
@@ -67,7 +72,21 @@
           margin-left: 500px;
 
 
-        } 
+        }
+        .divsec2
+        {
+           background-color: orange;
+          text-align: center;
+          border:10px red;
+          color: red;
+          margin: 30px;
+          text-decoration: underline;
+          width: 30%;
+          margin-left: 500px;
+
+
+        }
+
         a:link {
           color: white;
         }
@@ -121,7 +140,7 @@
    <br>
    <br>
    <br>
-  <h1>MY DETAILS</h1>
+  <div class="divsec"><h1>MY DETAILS</h1></div>
 	<div id="details">
     <p id = "namej">
       <b>Name : K. ROSHITH RAO</b>
@@ -134,9 +153,9 @@
         <b>Btech(COMPUTER SCIENCE AND ENGINEERING)</b> </a>
     </p>
   </div>
-   <img src="https://i.postimg.cc/DwxTZwHJ/roshith-rao.jpg" alt="my image" style = "margin: auto;border:1px solid black;padding: 10px;margin-left:50px">
-	
-  <table id="mytable">
+   <img id="img1" src="https://i.postimg.cc/DwxTZwHJ/roshith-rao.jpg" alt="my image" style = "margin: auto;border:1px solid black;padding: 10px;margin-left:50px">
+  <table id="mytable" class="table-hover">
+    <thead>
          <caption>
          	<p style="text-decoration:underline;"><b>Marks Obtained In My Previous Semester[3-2]</b></p>
          </caption>
@@ -146,6 +165,8 @@
                  <th><b>GRADE</b></th>
                  <th><b>CREDITS</b></th>
          </tr>
+   <thead>
+   <tbody>      
          <tr>
 	             <td>13508</td>
                   <td>COMPUTER NETWORKS LAB</td>
@@ -206,23 +227,30 @@
               <td colspan="2" id="value" style="text-align: center;"></td>
             </tr>
               
-         
+   </tbody>      
    </table>
 
    <a href="understandingjs.html" style="background-color: black;"> my understanding of js </a>
-   <script>
-       var firstvar =10;
+  
+   <script src = "myscript.js"></script>
+
+   
+    <script>
+     //average function 
+     function average(){
+     var avg = (89+99+89+79+69+59+59+69+79)/5;
+    document.getElementById("value").innerHTML = avg; //printing average in table
+    }
+    window.onload = function () {
+        average();
+      }
+     var firstvar =10;
      var secondvar =12;
      console.log(firstvar+secondvar); //operation on first and second variables
      var arr = [1,2,3,4,5]
      var str = String(arr[3]);
      console.log(typeof str); //converting array[3] into string
-     //average function
-     function average(){
-     var avg = (89+99+89+79+69+59+59+69+79)/5;
-    document.getElementById("value").innerHTML = avg; //printing average in table
-    }
-    average();
+  
     var pattern = /[A-Za-z]/i;
    var e =pattern.test(document.getElementById("namej"));//checking if the name contains only alpabets
    console.log(e);
@@ -235,7 +263,16 @@
    console.log(Math.sin((0*Math.PI)/180));
    console.log(Math.cos((45*Math.PI)/180));
 
-   </script>
+
+
+ </script>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="myscript.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 
    </body>
 </html>
