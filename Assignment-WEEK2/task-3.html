@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Task-3</title>
+	<meta charset="utf-8">
+   <link rel="stylesheet" href="task-3.css">
+</head>
+<body>
+	  <div class="rdip">
+         <a href="https://serc.iiit.ac.in/rdip">
+            <h1>RDIP</h1>
+         </a>
+      </div>
+      <div class = "mainlogo"><a href="https://www.iiit.ac.in/"><img src ="https://ltrc.iiit.ac.in/iasnlp2014/iiit-hyderabad-logo.jpg" alt="iiit-logo" width = "250" height="130"></a></div>
+      <br>
+      <ul>
+         <li><a href="task-1.html">Task-1</a></li>
+         <li><a href="task-2.html">Task-2</a></li>
+         <li><a href="task-3.html">Task-3</a></li>
+         <li><a href="task-4.html">Task-4</a></li>
+      </ul>
+      <br>
+     <h1>GAME OF PARLINDROMES</h1>
+	<div class="Parlindrone">
+    <h1>Check Your Word Is A PARLINDRONE ?</h1>
+	<label for="name">Enter Your Word:</label>
+   	<br>
+   	<br>
+    <input type="text" id="word" placeholder = "Word Comes Here">
+    <br>
+    <br>
+    <button onclick="return parlindrome()" style ="background-color: white">Check</button>
+    <br>
+    <br>
+    <p id = "par"  style="border: 1px solid red;
+         	background-color: red;
+         	visibility: hidden;"><b>Your Result Comes At The Top Of Page!</b></p>
+    </div>
+    <h1>GAME OF ANAGRAMS</h1>
+   <div class="Anagam">
+    <h1>Check Your Word Is A  ANAGRAM ?</h1>
+    <br>
+    <br>
+   <label for="ana1">Enter Your First Word:</label>
+   	<br>
+    <input type="text" id="ana1" placeholder ="First Word Comes Here">
+    <br>
+    <label for="ana2">Enter Your Second Word:</label>
+    <br>
+    <input id = "ana2" type="text" placeholder="Second Word Comes Here">
+    <br>
+    <br>
+    <button onclick="return Anagram()" style ="background-color: white">Check</button> 
+    <br>  
+    <p id="ana" style="border: 1px solid red;
+         	background-color: red;
+         	visibility: hidden;"><b>Your Result Comes At The Top Of Page!</b></p>
+   </div>
+   <script src="alltask.js"></script>
+ </body>
+</html>

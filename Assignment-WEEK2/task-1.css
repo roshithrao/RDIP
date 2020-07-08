@@ -1,0 +1,101 @@
+   .rdip 
+         {
+         text-align: right;
+         margin:40px;
+         padding-top: 5px;
+         }
+ .rdip a:link
+         {
+         color:blue;
+         }
+.rdip a:visited
+         {
+         color:gold;
+         }
+.rdip a:hover
+         {
+         color:lawngreen;
+         }
+.rdip a:hover
+         {
+         color:purple;
+         }
+.mainlogo
+         {
+         position: fixed;
+         top: 0;
+         left: 0;
+         padding-top: 10px;
+         }
+    ul {
+         margin-top: 20px;
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color:black;
+        }
+    li {
+         float: left;
+         }
+    li a {
+         display: inline-block;
+         color: white;
+         text-align: center;
+         padding: 15px 16px;
+         text-decoration: none;
+         }
+    a:link
+         {
+         color: blue;
+         }
+    a:visited
+         {
+         color:white;
+         }
+     a:hover
+         {
+         color : orangered;
+         }    
+     a:active
+         {
+         color:black;
+         }    
+     input
+         {
+         margin-left: 50px;
+         }
+     form
+         {
+         	border: 1px solid black;
+         	margin: auto;
+
+         }
+     input
+         {
+         	background-color: white;
+         }
+     body
+         {
+         	background-color:lightskyblue;
+         }
+
+    .calc
+        {
+          border: 2px solid black;
+          background-color: mediumseagreen;
+          padding: 100px;
+        }
+    button
+        {
+          border: 1px black;
+          text-align: center;
+          background:black;
+          color: white;
+
+        }  
+     .arth
+        {
+          margin: 30px;
+         } 
+       

@@ -1,0 +1,91 @@
+          
+
+   .rdip h1
+         {
+         text-align: right;
+         margin:40px;
+         padding-top: 5px;
+         border: 1px solid lightskyblue;
+         }
+   .rdip a:link
+         {
+         color:blue;
+         }
+   .rdip a:visited
+         {
+         color:gold;
+         }
+   .rdip a:hover
+         {
+         color:lawngreen;
+         }
+   .rdip a:hover
+         {
+         color:purple;
+         }
+   .mainlogo
+         {
+         position: fixed;
+         top: 0;
+         left: 0;
+         padding-top: 10px;
+         }
+      ul {
+         margin-top: 20px;
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color:black;
+         }
+      li {
+         float: left;
+         }
+      li a {
+         display: inline-block;
+         color: white;
+         text-align: center;
+         padding: 15px 16px;
+         text-decoration: none;
+         }
+      a:link
+         {
+         color: blue;
+         }
+      a:visited
+         {
+         color:white;
+         }
+      a:hover
+         {
+         color : orangered;
+         }    
+      a:active
+         {
+         color:black;
+         } 
+      h1
+         {
+            text-align: center;
+            border: 1px solid black;
+         }
+      body
+         {
+            background-color: skyblue;
+         } 
+.Parlindrone
+         {
+              border: 2px solid red;
+              width: 50%;
+              margin-left: 300px;
+              background-color: blue;
+
+         }  
+   .Anagam
+         {
+              border: 2px solid red;
+              width: 50%;
+              margin-left: 300px;
+              background-color: blue;
+         } 
+        

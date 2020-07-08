@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+   <head>
+      <meta charset="utf-8">
+      <title>Task-1</title>
+      <link rel="stylesheet" href="task-1.css">
+ </head>
+   <div class="rdip">
+         <a href="https://serc.iiit.ac.in/rdip">
+            <h1>RDIP</h1>
+         </a>
+      </div>
+      <div class = "mainlogo"><a href="https://www.iiit.ac.in/"><img src ="https://ltrc.iiit.ac.in/iasnlp2014/iiit-hyderabad-logo.jpg" alt="iiit-logo" width = "200" height="110"></a></div>
+      <br>
+      <br>
+      <ul>
+         <li><a href="task-1.html">Task-1</a></li>
+         <li><a href="task-2.html">Task-2</a></li>
+         <li><a href="task-3.html">Task-3</a></li>
+         <li><a href="task-4.html">Task-4</a></li>
+     </ul>
+      <br>
+      <br>
+      <div class = "calc">
+      <h1 style="color: black;border:2px solid black;width: 25%;background-color: red;text-align: center">Calculator Interface</h1>
+        <input type="number" name="a" id="t1" size="20" placeholder="Enter 1st Number"><br>
+        <input type="number" name="b" id="t2" size="20" placeholder="Enter 2nd Number"><br>
+     <div class="arth">
+       <button onclick="add(document.getElementById('t1').value,document.getElementById('t2').value)"> + </button>
+       <button onclick="sub(document.getElementById('t1').value,document.getElementById('t2').value)"> - </button>
+       <button onclick="mult(document.getElementById('t1').value,document.getElementById('t2').value)"> * </button>
+       <button onclick="divison(document.getElementById('t1').value,document.getElementById('t2').value)"> / </button>
+       <button onclick="percn(document.getElementById('t1').value,document.getElementById('t2').value)"> % </button>
+    </div>
+       <p style="text-decoration: underline;">IF U WANT TO CLACULATE SQUARE ROOT AND ABSOLUTE PLEASE INPUT HERE:</p>
+      <input type="number" name="c" id="t3" placeholder="Enter Your Number">
+      <br>
+      <br>
+        <button onclick="sqrtn(document.getElementById('t3').value)"> Find the square root of a number </button>
+        <button onclick="absn(document.getElementById('t3').value)"> Find the absolute value of a number </button>
+     </div>
+
+      <script src="alltask.js"> </script>
+
+
+   </body>
+</html>   
